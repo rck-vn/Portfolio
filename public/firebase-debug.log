@@ -1,0 +1,37 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /Users/RickV/.nvm/versions/node/v6.1.0/bin/node /Users/RickV/.nvm/versions/node/v6.1.0/bin/firebase deploy
+[debug] CLI Version:  3.0.2
+[debug] Platform:     darwin
+[debug] Node Version: v6.1.0
+[debug] Time:         Wed Jun 08 2016 15:02:01 GMT-0600 (MDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-72174 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-72174/tokens 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-72174'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-72174/uploads/-KJloavFiABz8xdr8mxM?fileCount=29&message= 
+[debug] <<< HTTP RESPONSE 200
+[error] 
+[error] Error: File upload failed: Storage error. Please try again. Failed to upload file "public/Applications/Chrome Apps.localized/Icon\r": Invalid Value
+[debug] Error Context: {
+  "duration": 1003,
+  "fileCount": 28,
+  "ip": "128.177.113.102",
+  "start": 1465419723791,
+  "status": "failed",
+  "statusMessage": "Storage error. Please try again. Failed to upload file \"public/Applications/Chrome Apps.localized/Icon\\r\": Invalid Value",
+  "uid": "100215734796031367964",
+  "uploadedCount": 15,
+  "user": {
+    "email": "x.rckvan@gmail.com",
+    "gaiaId": "100215734796031367964",
+    "image": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg"
+  }
+}
